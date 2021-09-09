@@ -2,22 +2,30 @@ package com.fitness.fitness;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.fitness.fitness.Adapters.MainPlansAdapter;
 import com.fitness.fitness.ExerciseData.PlanData;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -35,16 +43,24 @@ public class MainActivity extends AppCompatActivity {
 
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private AppBarConfiguration mAppBarConfiguration;
+    AppBarLayout appBarLayout;
+    TextView mTitle;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        final Toolbar toolbar = findViewById(R.id.toolbar);
+        /*Spannable spannable = new SpannableString("Fitness");
+        spannable.setSpan(new ForegroundColorSpan(getColor(R.color.darkRed)),0,2,6);
+        toolbar.setTitle(spannable);*/
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        mTitle = findViewById(R.id.title_in_main);
+        appBarLayout = findViewById(R.id.appbar_layout_pre_exercise);
         mRecyclerViewOnGoingPlan = findViewById(R.id.recyclerview_special_plan);
         mRecyclerViewBeginner = findViewById(R.id.recyclerview_beginner_plan);
         mRecyclerViewIntermediate = findViewById(R.id.recyclerview_intermediate_plan);
@@ -63,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 drawer.openDrawer(Gravity.LEFT);
             }
         });
+
         final NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -82,13 +99,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         RecyclerViewOperation();
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+        /*mAppBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.nav_home, R.id.nav_gallery)
                 .setDrawerLayout(drawer)
-                .build();
+                .build();*/
         /*NavController navController = Navigation.findNavController(this, getSupportFragmentManager().getFragments());
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController); */
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int i) {
+                if(Math.abs(i)-appBarLayout.getTotalScrollRange()==0)
+                {
+                    appBarLayout.setBackgroundColor(getColor(R.color.darkRed));
+                    mTitle.setTextColor(getColor(R.color.orange));
+
+                }
+                else
+                {
+                    appBarLayout.setBackgroundColor(getColor(R.color.orange));
+                    mTitle.setTextColor(getColor(R.color.darkRed));
+                }
+            }
+        });
+
 
     }
 

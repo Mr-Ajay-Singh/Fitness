@@ -3,11 +3,11 @@ package com.fitness.fitness.ExerciseGetter;
 import android.graphics.drawable.Drawable;
 
 public class Exercise {
-    Drawable mImageLocation;
+    int mImageLocation;
     String mExerciseName;
     String mExerciseInfo;
 
-    public Drawable getImageLocation() {
+    public int getImageLocation() {
         return mImageLocation;
     }
 
@@ -21,7 +21,7 @@ public class Exercise {
 
 
 
-    public Exercise(Drawable location,String name,String info)
+    public Exercise(int location,String name,String info)
     {
         mImageLocation =location;
         mExerciseName = name;

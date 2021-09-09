@@ -30,7 +30,27 @@ public class WorkoutHistory extends AppCompatActivity {
         noItemLayout = findViewById(R.id.layout_no_item_workout_history);
         mRecyclerviewHistory = findViewById(R.id.recyclerview_workout_history);
         mRecyclerviewHistory.setLayoutManager(new LinearLayoutManager(this));
-        new GetHistory().execute();
+        //new GetHistory().execute();
+        AppExecutor.getsInstance().getmDiskIO().execute(new Runnable() {
+            @Override
+            public void run() {
+                final List<DataEntity> entities = dataBase.daoInterface().getData();
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(entities!=null && entities.size()>0)
+                        {
+                            historyAdapter = new HistoryAdapter(WorkoutHistory.this,entities);
+                            mRecyclerviewHistory.setAdapter(historyAdapter);
+                        }
+                        else
+                        {
+                            noItemLayout.setVisibility(View.VISIBLE);
+                        }
+                    }
+                });
+            }
+        });
 
 
     }

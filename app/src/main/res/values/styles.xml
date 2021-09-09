@@ -21,4 +21,9 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"
         />
 
+    <style name="MyTheme" parent="AppTheme.PopupOverlay"
+        >
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 </resources>

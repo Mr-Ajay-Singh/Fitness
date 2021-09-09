@@ -26,6 +26,7 @@ import com.fitness.fitness.Adapters.PreExerciseAdapter;
 import com.fitness.fitness.ExerciseData.ExercisePlans;
 import com.fitness.fitness.ExerciseGetter.Exercise;
 import com.fitness.fitness.ExerciseGetter.Workout;
+import com.fitness.fitness.RoutineData.AllWeeklyPlan;
 import com.google.android.material.appbar.AppBarLayout;
 
 import java.util.ArrayList;
@@ -56,12 +57,12 @@ public class ExercisePreDetail extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recyclerview_pre_plan);
         mButtonStart = findViewById(R.id.button_start_pre_plan);
         mImagePreDetail = findViewById(R.id.image_exercise_pre_detail);
-
         //mTextTime = findViewById(R.id.time_pre_exercise);
         mTextExerciseCount = findViewById(R.id.exercise_count_pre_exercise);
         mExerciseName = getIntent().getStringExtra(getString(R.string.name_intent));
         mWeek = getIntent().getStringExtra(getString(R.string.week_count_intent));
         mDay = getIntent().getIntExtra(getString(R.string.day_count_intent),1);
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this,3));
         Log.i(LOG,String.valueOf(mDay));
         toolbar.setTitle(mExerciseName);
         int imageLocation = getIntent().getIntExtra(getString(R.string.image_intent),0);
@@ -108,7 +109,7 @@ public class ExercisePreDetail extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void WorkoutPlans() {
-        mRecyclerView.setLayoutManager(new GridLayoutManager(this,3));
+
         ExercisePlans exercisePlans = new ExercisePlans(this);
 
         if(mExerciseName!=null)
@@ -120,13 +121,10 @@ public class ExercisePreDetail extends AppCompatActivity {
                 SpannigTextview();
                 // mTextExerciseCount.setText(String.valueOf(workouts.size())+" Exercises");
                 break;
-            case "Our Plan": OurPlanWeek();
-                preExerciseAdapter = new PreExerciseAdapter(this,workouts);
-                //SpannigTextview();
-                //mTextExerciseCount.setText(String.valueOf(workouts.size())+" Exercises");
-                    break;
+            case "Our Plan":
             case "Fiit Plan":
-                OurPlanWeek();
+                AllWeeklyPlan plan = new AllWeeklyPlan(this,mExerciseName,mWeek,mDay);
+                workouts = plan.getWeeklyPlan();
                 preExerciseAdapter = new PreExerciseAdapter(this,workouts);
                 SpannigTextview();
                 //mTextExerciseCount.setText(String.valueOf(workouts.size())+" Exercises");
@@ -169,6 +167,7 @@ public class ExercisePreDetail extends AppCompatActivity {
             case 6: workouts = exercisePlans.getFitDay1();break;
         }
     }
+
     private void OurPlanWeek2() {
         ExercisePlans exercisePlans = new ExercisePlans(this);
         Log.i(LOG+"Day",String.valueOf(mDay));

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="date"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -36,10 +36,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Exercise Name"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/exercise_name_history_view_holder"
         />
         <LinearLayout
@@ -56,6 +57,8 @@
             android:textColor="@color/darkGrey"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
             android:id="@+id/exercise_count_history_view_holder"
             />
 
@@ -67,6 +70,8 @@
                 android:layout_marginTop="50dp"
                 android:layout_weight="1"
                 android:text="x20"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
                 android:textColor="@color/darkGrey"
                 android:textSize="14sp" />
         </LinearLayout>

@@ -12,6 +12,12 @@ import android.os.Handler;
 import android.os.Looper;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.StyleSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -31,6 +37,8 @@ import com.fitness.fitness.ExerciseGetter.Workout;
 import java.util.List;
 import java.util.Locale;
 
+import static android.graphics.Typeface.BOLD;
+
 public class StartExercise extends AppCompatActivity {
 
     String mPlanName;
@@ -38,11 +46,11 @@ public class StartExercise extends AppCompatActivity {
     int mDay;
     List<Workout> workouts;
     private ExercisePlans exercisePlans;
-    ImageView mExerciseImage,mPreviousImage,mNextImage,imageDialog,mVolumeOn,mMoreInfo;
+    ImageView mExerciseImage,mPreviousImage,mNextImage,imageDialog,mVolumeOn,mMoreInfo,mBackButton;
     Button mStartButton,okDialog;
     TextView mNameText,mExerciseCountText,nameDialog,infoDialog,countDialog,timeDialog;
     int count=0,dialogTimeCount=0,exerciseTimeCounter=0;
-    Dialog mDialogExerciseInfo;
+    Dialog mDialogExerciseInfo,mExitDialog;
     Handler handler;
     Runnable runnable;
     TextToSpeech textToSpeech;
@@ -58,6 +66,7 @@ public class StartExercise extends AppCompatActivity {
         mVolumeOn = findViewById(R.id.volume_on);
         mPreviousImage = findViewById(R.id.image_previous_exercise_start);
         mNextImage = findViewById(R.id.image_next_exercise_start);
+        mBackButton = findViewById(R.id.back_button_start_activity);
         mStartButton = findViewById(R.id.button_start_exercise);
         mNameText = findViewById(R.id.text_name_start_exercise);
         mExerciseCountText = findViewById(R.id.text_exercise_count_start);
@@ -161,12 +170,12 @@ public class StartExercise extends AppCompatActivity {
                 if(motionEvent.getAction()==MotionEvent.ACTION_DOWN) {
                     Log.i("volumeTag",mVolumeOn.getTag().toString()+","+getString(R.string.volume_off_tag)+","+getString(R.string.volume_on_tag));
 
-                    if (mVolumeOn.getTag().equals(getString(R.string.volume_off_tag))) {
+                    if (mVolumeOn.getTag().toString().equals(getString(R.string.volume_off_tag))) {
                         mVolumeOn.setImageDrawable(getDrawable(R.drawable.volume_on));
                         mVolumeOn.setTag(getString(R.string.volume_on_tag));
                         ttsOn = true;
                     }
-                    if (mVolumeOn.getTag().equals(getString(R.string.volume_on_tag)))
+                    if (mVolumeOn.getTag().toString().equals(getString(R.string.volume_on_tag)))
                     {
                         mVolumeOn.setImageDrawable(getDrawable(R.drawable.volume_off));
                         mVolumeOn.setTag(getString(R.string.volume_off_tag));
@@ -200,6 +209,13 @@ public class StartExercise extends AppCompatActivity {
             }
         });
 
+        mBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ExitDialog();
+            }
+        });
+
     }
 
     private void WorkoutWorking() {
@@ -221,7 +237,7 @@ public class StartExercise extends AppCompatActivity {
         if(workouts!=null)
         {
             CallDialog();
-            Glide.with(this).load(workouts.get(count).getExercise().getImageLocation()).into(mExerciseImage);
+            Glide.with(this).load(getDrawable(workouts.get(count).getExercise().getImageLocation())).into(mExerciseImage);
             mNameText.setText(workouts.get(count).getExercise().getExerciseName());
 
 
@@ -318,8 +334,9 @@ public class StartExercise extends AppCompatActivity {
 
     private void CallDialog() {
         Glide.with(this).load(workouts.get(count).getExercise().getImageLocation()).into(imageDialog);
+        Spannable spannable = getSpannableString(workouts.get(count).getExercise().getExerciseInfo());
         nameDialog.setText(workouts.get(count).getExercise().getExerciseName());
-        infoDialog.setText(workouts.get(count).getExercise().getExerciseInfo());
+        infoDialog.setText(spannable);
 
         if (!isPrevious) {
             if (ttsOn) {
@@ -383,6 +400,57 @@ public class StartExercise extends AppCompatActivity {
             handler.postDelayed(runnable1,1000);
         }
 
+    private Spannable getSpannableString(String str) {
+        Spannable spannable = new SpannableString(str);
+        int index = str.indexOf("\n\n");
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            spannable.setSpan(new ForegroundColorSpan(getColor(R.color.darkBlue)),0,8, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            spannable.setSpan(new StyleSpan(BOLD),0,8, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            spannable.setSpan(new RelativeSizeSpan(1.3f),0,8, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        }
+        while (index >= 0)
+        {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                spannable.setSpan(new ForegroundColorSpan(getColor(R.color.darkBlue)),index,index+9, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                spannable.setSpan(new StyleSpan(BOLD),index,index+9, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                spannable.setSpan(new RelativeSizeSpan(1.3f),index,index+9, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+
+            }
+            index = str.indexOf("\n\n",index+1);
+        }
+        return spannable;
+    }
+
+    private void ExitDialog()
+    {
+        if(mExitDialog==null) {
+            mExitDialog = new Dialog(this);
+            mExitDialog.setContentView(R.layout.want_to_exit_dialog);
+        }
+        Button mExitYes,mExitNo;
+        mExitNo = mExitDialog.findViewById(R.id.exit_exercise_dialog_no);
+        mExitYes = mExitDialog.findViewById(R.id.exit_exercise_dialog_yes);
+        mExitDialog.show();
+        mExitNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(mExitDialog!=null && mExitDialog.isShowing())
+                    mExitDialog.dismiss();
+            }
+        });
+        mExitYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(mExitDialog!=null && mExitDialog.isShowing()) {
+                    mExitDialog.dismiss();
+                    StartExercise.super.onBackPressed();
+                }
+            }
+        });
+    }
+
+
 
     @Override
     protected void onStop() {
@@ -395,6 +463,11 @@ public class StartExercise extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        ExitDialog();
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
@@ -402,4 +475,5 @@ public class StartExercise extends AppCompatActivity {
                 handler.removeCallbacks(runnable);
         }
     }
+
 }

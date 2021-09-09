@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/darkGrey"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
 
@@ -22,12 +23,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Special Plan"
-        android:fontFamily="@font/europa_regular"
+        android:fontFamily="@font/chunk_five_otf"
         android:layout_marginLeft="15dp"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:layout_marginBottom="5dp"
-        android:textColor="@color/lightBlack"
+        android:textColor="@color/white"
         />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -41,11 +42,11 @@
         android:layout_height="wrap_content"
         android:text="Beginner Plan"
         android:textStyle="bold"
-        android:fontFamily="@font/europa_regular"
+        android:fontFamily="@font/chunk_five_otf"
         android:layout_marginLeft="15dp"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:layout_marginBottom="15dp"
-        android:textColor="@color/lightBlack"
+        android:textColor="@color/white"
         />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -59,11 +60,11 @@
             android:layout_height="wrap_content"
             android:text="Intermediate Plan"
          android:textStyle="bold"
-         android:textSize="20sp"
-         android:fontFamily="@font/europa_regular"
+         android:textSize="25sp"
+         android:fontFamily="@font/chunk_five_otf"
          android:layout_marginBottom="15dp"
          android:layout_marginLeft="15dp"
-         android:textColor="@color/lightBlack"
+         android:textColor="@color/white"
             />
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
@@ -76,12 +77,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Advanced Plan"
-         android:fontFamily="@font/europa_regular"
+         android:fontFamily="@font/chunk_five_otf"
          android:textStyle="bold"
-         android:textSize="20sp"
+         android:textSize="25sp"
          android:layout_marginBottom="15dp"
          android:layout_marginLeft="15dp"
-         android:textColor="@color/black"
+         android:textColor="@color/white"
             />
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

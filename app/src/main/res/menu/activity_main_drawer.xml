@@ -3,33 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/first_menu_group"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/home_logo_svg"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:icon="@drawable/history_menu_svg"
+            android:title="@string/menu_history" />
     </group>
     <group android:checkableBehavior="single"
+        android:id="@+id/second_menu_group"
         >
         <item
             android:id="@+id/rate_us"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/rate_menu_svg"
             android:title="Rate Us" />
         <item
             android:id="@+id/share"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/share_menu_svg"
             android:title="Share" />
         <item
             android:id="@+id/feedback"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/feedback_menu_svg"
             android:title="Feedback" />
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/privacy_policy_menu_svg"
+            android:title="@string/menu_privacy_policy" />
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/contact_menu_svg"
+            android:title="@string/menu_contact_us" />
     </group>
 </menu>
