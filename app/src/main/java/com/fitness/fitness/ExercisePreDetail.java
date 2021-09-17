@@ -45,6 +45,7 @@ public class ExercisePreDetail extends AppCompatActivity {
     ImageView mImagePreDetail;
     AppBarLayout appBarLayout;
 
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
