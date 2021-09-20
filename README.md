@@ -8,7 +8,7 @@ create the exercise assets and their animation. (Ongoing)
 
 **************************************************************************************************************************************************************
 Download Apk By Clicking on the Link
-<a href="https://github.com/Mr-Ajay-Singh/Whatsapp-Status-Downloader/releases/download/Android/WhatsApp-Status-Downloader.apk" target="_blank" >Download APK</a>
+<a href="https://github.com/Mr-Ajay-Singh/Fitness/releases/download/android/fitness.apk" target="_blank" >Download APK</a>
 
 **************************************************************************************************************************************************************
 
