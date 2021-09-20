@@ -35,7 +35,7 @@ public class ExercisePlans {
                 mAbsBeginner.add(wk4);
                  Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
                 mAbsBeginner.add(wk5);
-                 Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+                 Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
                 mAbsBeginner.add(wk6);
                 Workout wk7 = new Workout(allExercise.mPushUp,10,false);
                 mAbsBeginner.add(wk7);
@@ -65,7 +65,7 @@ public class ExercisePlans {
         mAbsBeginner.add(wk4);
          Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         mAbsBeginner.add(wk5);
-         Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+         Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         mAbsBeginner.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
                 mAbsBeginner.add(wk7);
@@ -88,7 +88,7 @@ public List<Workout> getFitDay1()
         mAbsBeginner.add(wk4);
          Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         mAbsBeginner.add(wk5);
-         Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+         Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         mAbsBeginner.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
                 mAbsBeginner.add(wk7);
@@ -115,7 +115,7 @@ public List<Workout> getFitDay2()
         mAbsBeginner.add(wk4);
          Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         mAbsBeginner.add(wk5);
-         Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+         Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         mAbsBeginner.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
                 mAbsBeginner.add(wk7);

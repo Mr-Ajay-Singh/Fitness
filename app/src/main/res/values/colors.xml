@@ -15,5 +15,6 @@
     <color name="darkGreen">#00e600</color>
     <color name="darkRed">#cc0000</color>
     <color name="orange">#ffa500</color>
+    <color name="darkOrange">#a16800</color>
     <color name="yellow">#daff00</color>
 </resources>

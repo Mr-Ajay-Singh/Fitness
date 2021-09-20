@@ -13,7 +13,7 @@ public class AllExercise {
             mBridge,mCalfRaise,mCrossPunchRoll,mCrunch,mHamstringStretch,mItbandStretch,mJogInPlace,mJumpSquat,
             mJupingJack,mKickbackLeft,mLeftLegBridge,mLeftSideLying,mLeftSidePlankCrunch,mLegLoweringDrill,mLowerSideToSideLunge
             ,mLungeWithArmReach,mLunges,mMountainClimb,mPlankWithLeftLegLift,mPushUpAmpRotation,mRightLegRaise,mSquats,
-            mWideStanceSquat,mStepUpOntoChair,mSumoSquats,mTableTopDip,mWallMountainClimber,mWallExercise,mPushUp;
+            mWideStanceSquat,mStepUpOntoChair,mSumoSquats,mTableTopDip,mWallMountainClimber,mPushUp;
     public AllExercise(Context ctx)
     {
         context = ctx;

@@ -116,12 +116,16 @@ public class ExercisePreDetail extends AppCompatActivity {
         if(mExerciseName!=null)
         switch (mExerciseName)
         {
-            case "Abs Beginner": workouts = exercisePlans.getAbsBeginner();
+            case "Chest":
+            case "Shoulder":
+            case "Biceps":
+            case "Abs": workouts = exercisePlans.getAbsBeginner();
                 preExerciseAdapter = new PreExerciseAdapter(this,workouts);
 
                 SpannigTextview();
                 // mTextExerciseCount.setText(String.valueOf(workouts.size())+" Exercises");
                 break;
+
             case "Our Plan":
             case "Fiit Plan":
                 AllWeeklyPlan plan = new AllWeeklyPlan(this,mExerciseName,mWeek,mDay);

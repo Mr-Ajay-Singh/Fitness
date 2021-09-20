@@ -39,7 +39,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -65,7 +65,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -91,7 +91,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -117,7 +117,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -159,7 +159,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -185,7 +185,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -211,7 +211,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -237,7 +237,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -263,7 +263,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -289,7 +289,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -315,7 +315,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -341,7 +341,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -367,7 +367,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -393,7 +393,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -419,7 +419,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -445,7 +445,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -471,7 +471,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -497,7 +497,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -523,7 +523,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -549,7 +549,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -575,7 +575,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -601,7 +601,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -627,7 +627,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -653,7 +653,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -679,7 +679,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -705,7 +705,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);
@@ -731,7 +731,7 @@ public class OurPlan extends AbstractClass {
         dailyList.add(wk4);
         Workout wk5 = new Workout(allExercise.mStraightArmPlank,20,false);
         dailyList.add(wk5);
-        Workout wk6 = new Workout(allExercise.mWallExercise,10,false);
+        Workout wk6 = new Workout(allExercise.mWallMountainClimber,10,false);
         dailyList.add(wk6);
         Workout wk7 = new Workout(allExercise.mPushUp,10,false);
         dailyList.add(wk7);

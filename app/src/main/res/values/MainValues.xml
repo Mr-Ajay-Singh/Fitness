@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="abs_beginner">Abs Beginner</string>
-    <string name="abs_intermediate">Abs Intermediate</string>
-    <string name="abs_advance">Abs Advance</string>
-    <string name="chest_beginner">Chest Beginner</string>
-    <string name="chest_intermediate">Chest Intermediate</string>
-    <string name="chest_advance">Chest Advance</string>
+    <string name="abs_beginner">Abs</string>
+    <string name="abs_intermediate">Abs</string>
+    <string name="abs_advance">Abs</string>
+    <string name="chest_beginner">Chest</string>
+    <string name="chest_intermediate">Chest</string>
+    <string name="chest_advance">Chest</string>
+    <string name="biceps_beginner">Biceps</string>
+    <string name="biceps_intermediate">Biceps</string>
+    <string name="biceps_advance">Biceps</string>
+    <string name="shoulder_beginner">Shoulder</string>
+    <string name="shoulder_intermediate">Shoulder</string>
+    <string name="shoulder_advance">Shoulder</string>
     <string name="our_plan">Our Plan</string>
     <string name="fiit_plan">Fiit Plan</string>
     <string name="hiit_plan">Hiit Plan</string>

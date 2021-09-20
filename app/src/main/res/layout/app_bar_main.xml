@@ -13,7 +13,7 @@
         android:fitsSystemWindows="true"
         android:id="@+id/appbar_layout_pre_exercise"
         android:elevation="20dp"
-        android:background="@color/darkBlue"
+        android:background="@color/orange"
         app:elevation="10dp"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:fitsSystemWindows="true"
-        app:contentScrim="@color/lightGreen"
+        app:contentScrim="@color/darkOrange"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
         >
 

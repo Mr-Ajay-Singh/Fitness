@@ -108,13 +108,13 @@ public class PlanData {
 
     public List<PlanInfo> BeginnerPlan(){
             beginnerPlan = new ArrayList<>();
-            PlanInfo info1 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.main_photo,"25");
+            PlanInfo info1 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.abs_beginner_main_plan,"25");
             beginnerPlan.add(info1);
-            PlanInfo info2 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.chest,"50");
+            PlanInfo info2 = new PlanInfo(context.getString(R.string.chest_beginner),context.getString(R.string.level_beginner),R.drawable.chest,"50");
             beginnerPlan.add(info2);
-            PlanInfo info3 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.biceps,"30");
+            PlanInfo info3 = new PlanInfo(context.getString(R.string.biceps_beginner),context.getString(R.string.level_beginner),R.drawable.biceps,"30");
             beginnerPlan.add(info3);
-            PlanInfo info4 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.abs,"20");
+            PlanInfo info4 = new PlanInfo(context.getString(R.string.shoulder_beginner),context.getString(R.string.level_beginner),R.drawable.abs,"20");
             beginnerPlan.add(info4);
 
 
@@ -123,13 +123,13 @@ public class PlanData {
 
         public List<PlanInfo> IntermediatePlan(){
             intermediatePlan = new ArrayList<>();
-            PlanInfo info1 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.chest,"10");
+            PlanInfo info1 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_intermediate),R.drawable.abs_intermediate_main_plan,"10");
             intermediatePlan.add(info1);
-            PlanInfo info2 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.abs,"40");
+            PlanInfo info2 = new PlanInfo(context.getString(R.string.chest_intermediate),context.getString(R.string.level_intermediate),R.drawable.chest_intermediate_main_plan,"40");
             intermediatePlan.add(info2);
-            PlanInfo info3 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.biceps,"30");
+            PlanInfo info3 = new PlanInfo(context.getString(R.string.biceps_intermediate),context.getString(R.string.level_intermediate),R.drawable.biceps_intermediate_main_plan,"30");
             intermediatePlan.add(info3);
-            PlanInfo info4 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.main_photo,"20");
+            PlanInfo info4 = new PlanInfo(context.getString(R.string.shoulder_intermediate),context.getString(R.string.level_intermediate),R.drawable.main_photo,"20");
             intermediatePlan.add(info4);
 
 
@@ -138,13 +138,13 @@ public class PlanData {
 
         public List<PlanInfo> AdvancePlan(){
             advancePlan = new ArrayList<>();
-            PlanInfo info1 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.chest,"20");
+            PlanInfo info1 = new PlanInfo(context.getString(R.string.abs_advance),context.getString(R.string.level_advance),R.drawable.chest,"20");
             advancePlan.add(info1);
-            PlanInfo info2 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.main_photo,"10");
+            PlanInfo info2 = new PlanInfo(context.getString(R.string.chest_advance),context.getString(R.string.level_advance),R.drawable.main_photo,"10");
             advancePlan.add(info2);
-            PlanInfo info3 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.abs,"30");
+            PlanInfo info3 = new PlanInfo(context.getString(R.string.biceps_advance),context.getString(R.string.level_advance),R.drawable.abs,"30");
             advancePlan.add(info3);
-            PlanInfo info4 = new PlanInfo(context.getString(R.string.abs_beginner),context.getString(R.string.level_beginner),R.drawable.biceps,"55");
+            PlanInfo info4 = new PlanInfo(context.getString(R.string.shoulder_advance),context.getString(R.string.level_advance),R.drawable.biceps,"55");
             advancePlan.add(info4);
 
 

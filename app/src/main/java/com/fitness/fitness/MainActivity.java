@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             public void onOffsetChanged(AppBarLayout appBarLayout, int i) {
                 if(Math.abs(i)-appBarLayout.getTotalScrollRange()==0)
                 {
-                    appBarLayout.setBackgroundColor(getColor(R.color.darkRed));
+                    appBarLayout.setBackgroundColor(getColor(R.color.darkOrange));
                     mTitle.setTextColor(getColor(R.color.orange));
 
                 }
