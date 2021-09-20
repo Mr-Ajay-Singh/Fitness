@@ -222,7 +222,10 @@ public class StartExercise extends AppCompatActivity {
         exercisePlans = new ExercisePlans(this);
         switch (mPlanName)
         {
-            case "Abs Beginner": workouts = exercisePlans.getAbsBeginner();break;
+            case "Chest":
+            case "Shoulder":
+            case "Biceps":
+            case "Abs": workouts = exercisePlans.getAbsBeginner();break;
             case "Our Plan": workouts = exercisePlans.getFitDay1();break;
             case "Fiit Plan": workouts = exercisePlans.getFitDay2();break;
 
