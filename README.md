@@ -5,9 +5,12 @@ portions and allows various functionality to track progress. Created using Andro
 used to store the daily progress of the personal exercise. Adobe Illustrator and Adobe Photoshop are used to
 create the exercise assets and their animation. (Ongoing)
 
+
+**************************************************************************************************************************************************************
 Download Apk By Clicking on the Link
 <a href="https://github.com/Mr-Ajay-Singh/Whatsapp-Status-Downloader/releases/download/Android/WhatsApp-Status-Downloader.apk" target="_blank" >Download APK</a>
 
+**************************************************************************************************************************************************************
 
 <span>
 <img src="https://github.com/Mr-Ajay-Singh/Whatsapp-Status-Downloader/blob/master/app/src/main/res/ScreenShots/photo1.jpg" width="200" height="400" />
